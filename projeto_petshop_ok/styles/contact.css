@@ -1,0 +1,59 @@
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.apresentacao__contato {
+    align-items: center;
+    padding: 100px;
+    margin: 150px 0;
+}
+
+.titulo__contatos {
+    text-align: left;
+    font-size: 30px;
+    font-family: var(--fonte-site)
+}
+
+.apresentacao__contato__links {
+    display: flex;
+    padding-top: 25px;
+    gap: 15px;
+    align-items: center;
+}
+
+.banner {
+    text-align: center;
+}
+
+.logo__links {
+    width: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    .apresentacao {
+        display: flex;
+        flex-direction: column;
+        margin: 100px 0;
+    }
+    .apresentacao__contato {
+        padding: 0 100px;
+        margin: 10px;
+    }
+
+    .logo__links {
+        width: 20px;
+    }
+
+    .titulo__contatos {
+        font-size: 1rem;
+    }
+
+    .banner img {
+        padding: 50px 10px;
+        width: 100%;
+        height: auto;
+    }
+
+}
