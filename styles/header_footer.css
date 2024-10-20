@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bungee+Spice&family=Patrick+Hand&display=swap');
+
+:root {
+    -fonte-site: "Times New Roman", Times, serif;
+    -fonte-preco: "Bungee Spice", sans-serif;
+
+    --cor-cabecalho-rodape: #FFDBB5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 100px;
+}
+
+.cabecalho {
+    background-color: var(--cor-cabecalho-rodape);
+    width: 100%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.cabecalho__logo {
+    padding: 2px 0;
+}
+
+.cabecalho__links {
+    align-items: center;
+    display:flex;
+    gap: 30px;
+    font-family: var(--fonte-site);
+    font-size: 1.25rem;
+}
+
+.links {
+    text-decoration: none ;
+    color: #000000;
+}
+
+.links:hover {
+    text-decoration: underline;
+}
+
+.rodape {
+    background: var(--cor-cabecalho-rodape);
+    padding: 1rem;
+    text-align: center;
+    font-family: var(--fonte-site);
+    font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .cabecalho__menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cabecalho__links {
+        flex-direction: column; 
+        gap: 15px;
+        padding: 10px 0;
+        font-size: 1rem;
+    }
+
+    .cabecalho__logo {
+        margin: 0;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .rodape {
+        font-size: 1rem; 
+    }
+}

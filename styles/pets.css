@@ -1,0 +1,42 @@
+.titulo__pets {
+    font-family: var(-fonte-site);
+    font-size: 2.5rem;
+    margin-top: 15px;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.mensagem {
+    font-family: var(-fonte-site);
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 5rem;
+}
+
+.galeria {
+    display: flex;
+    margin: 0 18.75rem 5rem 18.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 60px;
+}
+
+.legenda {
+    padding: 0.5rem 0 0 0;
+    font-size: 1.5rem;
+}
+
+.legenda__preco {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .galeria {
+        margin: 0;
+        padding-bottom: 35px;
+    }
+
+}

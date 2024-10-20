@@ -1,0 +1,100 @@
+.banner {
+    width: 80%;
+}
+
+.container__banner {
+    text-align: center;
+    padding: 1% 5% 0% 5%;
+}
+
+.container__promocao {
+    padding: 1% 0 0 0;
+    text-align: center;
+}
+
+.sinal {
+    margin: 9.3rem 0;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.sinal__igual {
+    margin: 9.3rem 0;
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-right: 80px;
+}
+
+.container__conteudo {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 1.25rem;
+}
+.titulo__promocao{
+    font-family: var(-fonte-site);
+    font-size: 3.1rem;
+    padding: 1rem;
+}
+
+.texto__promocao {
+    font-size: 1.5rem;
+    padding: 1.25rem;
+}
+
+.preco {
+    padding-top: 1rem
+}
+
+.preco {
+    font-family: "Bungee Spice", sans-serif;
+    font-size: 4rem;
+    padding: 0;
+}
+
+.mensagem__servicos {
+    font-family: var(-fonte-site);
+    font-size: 50px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .conteudo {
+        min-height: 100vh;
+        padding: 10px;
+    }
+
+    .container__banner img {
+        width: 100%;
+        height: auto;
+    }
+
+    .titulo__promocao, .texto__promocao {
+        text-align: center;
+    }
+
+    .container__conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sinal__igual {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+    .conteudo {
+        padding: 20px;
+        min-height: 87vh;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+    .conteudo {
+        padding: 20px;
+        min-height: 100vh;
+    }
+}
